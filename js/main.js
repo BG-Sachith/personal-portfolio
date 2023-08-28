@@ -123,15 +123,15 @@
 
   $('[id*=btnSend]').click(function () {
     // alert('message' + $('#name').val());
-    Email.send({
-      Host: 'smtp.gmail.com',
-      port: 587,
-      Username: 'vajrapani.blog.info@gmail.com',
-      Password: 'giixdxgsvhrpphlc',
-      To: 'sachith.info2@gmail.com',
-      From: 'vajrapani.blog.info@gmail.com',
-      Subject: $('#subject').val(),
-      Body: 'From : ' + $('#email').val() + ' .' + $('#message').val(),
-    }).then((message) => alert(message));
+    // Email.send({
+    //   Host: 'smtp.gmail.com',
+    //   port: 587,
+    //   Username: 'vajrapani.blog.info@gmail.com',
+    //   Password: 'giixdxgsvhrpphlc',
+    //   To: 'sachith.info2@gmail.com',
+    //   From: 'vajrapani.blog.info@gmail.com',
+    //   Subject: $('#subject').val(),
+    //   Body: 'From : ' + $('#email').val() + ' .' + $('#message').val(),
+    // }).then((message) => alert(message));
   });
 })(jQuery);
