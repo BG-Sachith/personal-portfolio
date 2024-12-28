@@ -6,7 +6,9 @@
     <title>Personal Portfolio Sachith</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="sachit, profile" name="keywords">
-    <meta content="Passionate Software Engineer with 2+ years of experience in developing web applications and backend systems. Skilled at writing ..." name="description">
+    <meta
+        content="Passionate Software Engineer with 2+ years of experience in developing web applications and backend systems. Skilled at writing ..."
+        name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -14,7 +16,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,11 +34,15 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXXXXXX/viewform?embedded=true" width="640" height="1024"
+        frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -44,7 +51,8 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-block d-lg-none d-none hide">
             <h1 class="text-primary fw-bold m-0">Sachith</h1>
         </a>
@@ -73,25 +81,30 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
+    <div class="container-fluid bg-light pt-6 mt-6 mt-0" id="home">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                <!-- Left Section: Text and CV Download -->
+                <div class="col-lg-6 pt-6 pb-0 pt-lg-0">
                     <h3 class="text-success mb-3">I'm</h3>
                     <h1 class="display-3 mb-3">Sachith</h1>
                     <h2 class="typed-text-output d-inline"></h2>
                     <div class="typed-text d-none">Software Engineer, Web Developer, Full-Stack Developer</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="https://sachith-portfolio-data.s3.amazonaws.com/Sachith+CV+Resume.pdf" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+
+                    <div class="d-flex align-items-center pt-4">
+                        <a href="https://sachith-portfolio-data.s3.amazonaws.com/Sachith+CV+Resume.pdf"
+                            class="btn btn-primary py-3 px-4 me-5" target="_blank" download>Download CV</a>
+                        <!-- Uncomment if you want to add a video modal in the future -->
                         <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5> -->
+                        <span></span>
+                    </button> -->
+                        <!-- <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5> -->
                     </div>
                 </div>
+                <!-- Right Section: Profile Image -->
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/profile.png" alt="">
+                    <img class="img-fluid rounded-circle" src="img/profile.png" alt="Sachith Profile Image">
                 </div>
             </div>
         </div>
@@ -99,8 +112,10 @@
     <!-- Header End -->
 
 
+
     <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -110,8 +125,8 @@
                 <div class="modal-body">
                     <!-- 16:9 aspect ratio -->
                     <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
@@ -121,329 +136,704 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl py-6" id="about">
+    <div class="container-xxl py-3" id="about">
         <div class="container">
             <div class="row g-5">
+                <!-- Left Section: About Me -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center mb-5">
                         <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">2+</h1>
+                            <h1 class="display-1 mb-0">3+</h1>
                             <h5 class="mb-0">Years</h5>
                         </div>
                         <h3 class="lh-base mb-0">of working experience as a web developer</h3>
                     </div>
-                    <p class="mb-4">I am an enterprising and multifaceted software engineer professional armed with BSc(Hons) in Electrical and Information Engineering from the Faculty of Engineering University of Ruhuna.</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Full Stack</p>
-                    <!-- <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Backend</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Frontend</p> -->
+                    <p class="mb-4">
+                        I am a dedicated and results-driven Software Engineer with over 3 years of experience in
+                        developing dynamic, user-centric web applications and scalable backend solutions. I hold a BSc
+                        (Hons) in Electrical and Information Engineering from the Faculty of Engineering, University of
+                        Ruhuna. My educational foundation has equipped me with a deep understanding of algorithms,
+                        problem-solving, and a solid grasp of technical concepts, which I leverage to build high-quality
+                        software solutions.
+                    </p>
+                    <p class="mb-4">
+                        Throughout my career, I have worked extensively in full-stack development, handling both the
+                        front-end and back-end responsibilities. My front-end expertise includes creating responsive,
+                        user-friendly interfaces using modern JavaScript frameworks such as **React.js** and
+                        **Angular**, while on the back-end, I am proficient in **Node.js**, **Spring Boot**, and
+                        **NestJS**, ensuring robust and scalable systems. My technical toolkit also includes working
+                        with various databases like **MySQL**, **MongoDB**, and **MariaDB** to build data models that
+                        support efficient querying and seamless user experiences.
+                    </p>
+                    <p class="mb-4">
+                        I am highly proficient in modern web development frameworks such as **Next.js**, which allows me
+                        to develop fast, SEO-friendly web applications with ease. I also have hands-on experience with
+                        server-side technologies like **Express.js**, **Spring Boot**, and **NestJS**, allowing me to
+                        create secure and high-performing back-end services. My work focuses on implementing RESTful
+                        APIs, optimizing databases for performance, and delivering top-notch security measures in every
+                        project I work on.
+                    </p>
+                    <p class="mb-4">
+                        Whether it's developing an entire platform from the ground up or fine-tuning individual
+                        components, I take pride in my ability to understand business requirements and translate them
+                        into efficient technical solutions. I enjoy working on complex problems and continually improve
+                        my skills by staying up to date with emerging technologies. I am passionate about writing clean,
+                        maintainable code that scales seamlessly, ensuring the solutions I create stand the test of time
+                        and grow with business needs.
+                    </p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Full Stack Development</p>
                     <a class="btn btn-primary py-3 px-5 mt-3" href="#skill">Read More</a>
                 </div>
+
+                <!-- Right Section: Images & Achievements -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
                         <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="About Image 1">
                         </div>
                         <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="About Image 2">
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">AWARDS</h5>
                         <h2 class="text-primary fw-bold mb-0">Achievements</h2>
-                        <!-- <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">Achievements 2</h2> -->
                     </div>
                     <ul>
-                    <li>
-                        <p class="mb-4 mr-2">Shield of Code 2019 interfaculty Hackathon winners.</p>
-                    </li>
-                    
-                    <!-- <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div> -->
-                    <li>
-                        <p class="mb-0 mr-2">  5 - Finalists - IEEE Innovation Nation Sri Lanka.</p>
-                    </li>
-                </ul>
+                        <li>
+                            <p class="mb-4 mr-2"><i class="fas fa-trophy text-primary me-2"></i>**Shield of Code 2019**:
+                                Won the interfaculty Hackathon, which brought together talented developers from various
+                                faculties to solve challenging problems in a collaborative environment. This victory was
+                                a testament to my ability to think critically, work under pressure, and collaborate
+                                effectively in a team setting.</p>
+                        </li>
+                        <li>
+                            <p class="mb-0 mr-2"><i class="fas fa-trophy text-primary me-2"></i>**IEEE Innovation Nation
+                                Sri Lanka - Finalist (5th Position)**: As a finalist in the prestigious IEEE Innovation
+                                Nation competition, I had the opportunity to showcase my innovative ideas and technical
+                                skills in front of a distinguished panel of experts. This achievement highlighted my
+                                creativity and ability to design practical, forward-thinking solutions to real-world
+                                problems.</p>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center mb-3 mt-4">
+                        <h5 class="border-end pe-3 me-3 mb-0">PROJECTS</h5>
+                        <h2 class="text-primary fw-bold mb-0">Key Projects</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <p class="mb-4 mr-2"><i class="fas fa-project-diagram text-primary me-2"></i>**FieldEx
+                                Platform**: Led the development of a dynamic platform for managing field services, where
+                                I implemented end-to-end solutions for both frontend and backend systems. This project
+                                involved creating complex user interfaces with **Angular** and building scalable backend
+                                services using **Spring Boot** and **JHipster**.</p>
+                        </li>
+                        <li>
+                            <p class="mb-4 mr-2"><i class="fas fa-project-diagram text-primary me-2"></i>**Blog**:
+                                Developed a full-featured **Blog Platform** where users can read, write, and interact
+                                with blog posts. This platform evolved over time with two major versions:
+
+                                <strong>Old Version:</strong>
+                                - Built with **Next.js**, **MongoDB**, and **Redux**. The **MongoDB** database provided
+                                flexibility in storing unstructured data for posts and comments, and **Redux** was used
+                                to manage application state, such as user authentication and post management, across the
+                                platform.
+                                - Key features of this version:
+                                - User authentication and session management with JWT tokens.
+                                - Users could create, read, update, and delete blog posts with comments powered by
+                                **MongoDB**.
+                                - Frontend built with **Next.js** for SSR/SSG, providing SEO-friendly and performant
+                                pages.
+                                - Real-time updates using **Redux** to handle post data, user sessions, and dynamic
+                                content display.
+
+                                <strong>New Version:</strong>
+                                - Rebuilt with **Next.js**, **MySQL**, and **Prisma**. This updated version improves
+                                performance and scalability with a relational **MySQL** database, leveraging **Prisma**
+                                as an ORM to manage structured data effectively.
+                                - Key improvements:
+                                - Data storage has been optimized with a relational database (MySQL), which allows for
+                                more complex queries and relationships between posts, users, and comments.
+                                - **Prisma** was implemented to interact with the MySQL database, improving query
+                                efficiency and ease of database management.
+                                - **State management** is now handled with **Redux**, ensuring seamless user experiences
+                                for handling authentication, post management, and real-time updates.
+                                - The user interface remains highly responsive, built with **Next.js** for fast,
+                                SEO-optimized pages with SSR/SSG.
+
+                                This evolution reflects my commitment to optimizing the platform for scalability,
+                                performance, and a better user experience.
+                            </p>
+
+
+                        </li>
+                        <li>
+                            <p class="mb-0 mr-2"><i class="fas fa-project-diagram text-primary me-2"></i>**Simlea**:
+                                Created **Simlea**, an innovative platform designed to help students and professionals
+                                in the field of engineering. The platform allows users to access educational resources,
+                                tutorials, and peer interactions. Built with **Angular** and **Spring Boot**, the
+                                project utilized the latest web development technologies to ensure smooth navigation,
+                                data integration, and real-time interactions.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
 
-
     <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
+    <div class="container-xxl py-6 pb-1" id="skill">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-5 mb-5">Skills & Experience</h1>
-                    <!-- <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum clita dolor duo clita sit.</p> -->
-                    <h3 class="mb-4">My Skills</h3>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">HTML</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Javascript</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">CSS</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Java</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between pb-1">
-                                    <h6 class="font-weight-bold"> &nbsp; </h6>
-                                    <h6 class="font-weight-bold">  </h6>
-                                </div>
-                                <!-- &nbsp;  -->
-                                <!-- <div class="progress"> -->
-                                    <!-- <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div> -->
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Spring Boot</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">NestJs</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">NodeJs</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">NextJs</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">React</h6>
-                                    <h6 class="font-weight-bold">83%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Angular</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
                     <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
+                                href="#tab-1">Experience</button>
                         </li>
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
+                            <button class="nav-link w-100 py-3 fs-5 " data-bs-toggle="pill"
+                                href="#tab-2">Education</button>
                         </li>
                     </ul>
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="row gy-5 gx-4">
+
+                                <!-- FieldEx -->
                                 <div class="col-sm-6">
                                     <h5>Full Stack Developer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2021</p>
-                                    <h6 class="mb-0"><a rel="link" class="text-dark" href="https://www.custella.com/"> Custella sdn bhd </a></h6>
+                                    <p class="text-primary mb-1">2021 – Present</p>
+                                    <h6 class="mb-0"><a rel="link" class="text-dark" href="https://www.fieldex.com/">
+                                            FieldEx</a></h6>
+                                    <p>
+                                        As a **Full Stack Developer** at **FieldEx**, I played a key role in developing
+                                        and optimizing a dynamic and scalable field service management platform. My
+                                        contributions spanned both backend and frontend, focusing on improving the user
+                                        experience and ensuring system scalability across various customer segments.
+                                    </p>
+                                    <ul>
+                                        <li><strong>Backend Development with Spring Boot & JHipster:</strong> Developed
+                                            backend services using **Spring Boot** and **JHipster**, building RESTful
+                                            APIs to ensure smooth integration with the frontend components.</li>
+                                        <li><strong>Dynamic Form Systems & PDF Generation:</strong> Created dynamic
+                                            forms for real-time data collection and implemented dynamic PDF generation
+                                            using **NestJS** and **pdf-make** for customizable report creation.</li>
+                                        <li><strong>Frontend Development with Angular:</strong> Designed and optimized
+                                            the Angular frontend, ensuring a responsive and intuitive user interface
+                                            that streamlined field operations.</li>
+                                        <li><strong>Testing & CI/CD:</strong> Integrated **JUnit** and **Jest** for unit
+                                            testing, and used **GitHub CI/CD** pipelines for automated testing and
+                                            deployments, ensuring high-quality releases.</li>
+                                    </ul>
+                                    <p>Technologies Used:</p>
+                                    <ul>
+                                        <li>Backend: **Spring Boot**, **JHipster**, **Node.js**, **NestJS**</li>
+                                        <li>Frontend: **Angular**, **Next.js**, **HTML5**, **CSS3**, **TypeScript**</li>
+                                        <li>Databases: **MariaDB**, **MongoDB**</li>
+                                        <li>Other: **Quartz Scheduler**, **iText**, **PDF-Make**, **SendGrid**</li>
+                                        <li>Testing & CI/CD: **JUnit**, **Jest**, **GitHub**, **Jira**</li>
+                                    </ul>
                                 </div>
+
+                                <!-- Effective Solutions (Pvt.) Ltd. -->
                                 <div class="col-sm-6">
                                     <h5>Full Stack Developer</h5>
                                     <hr class="text-primary my-2">
                                     <p class="text-primary mb-1">2019</p>
-                                    <h6 class="mb-0 "><a class="text-dark" rel="link" href="https://effectivesolutions.xyz/">Effective Solutions (Pvt.) Ltd.</a></h6>
+                                    <h6 class="mb-0"><a class="text-dark" rel="link"
+                                            href="https://effectivesolutions.xyz/">Effective Solutions (Pvt.) Ltd.</a>
+                                    </h6>
+                                    <p>
+                                        At **Effective Solutions**, I worked on two significant projects: an **Accident
+                                        Management System** for the City Traffic Police Station and a **POS System** for
+                                        Junior George Clothing Store. My role included developing user interfaces and
+                                        backend logic, integrating data management systems, and ensuring smooth
+                                        functionality.
+                                    </p>
+                                    <ul>
+                                        <li><strong>Accident Management System:</strong> Created a web application for
+                                            traffic police to manage accident reports efficiently.</li>
+                                        <li><strong>POS System for Junior George:</strong> Developed a POS system to
+                                            streamline the sales and inventory processes at Junior George Clothing
+                                            Store.</li>
+                                    </ul>
+                                    <p>Technologies Used:</p>
+                                    <ul>
+                                        <li>Backend: **Java SE**, **JavaFX**, **Node.js**</li>
+                                        <li>Frontend: **HTML**, **JavaScript**, **Angular**</li>
+                                        <li>Others: **Bootstrap**, **jQuery**, **Leaflet**, **Bitbucket**</li>
+                                    </ul>
                                 </div>
+
+                                <!-- Blog Platform Project -->
                                 <div class="col-sm-6">
                                     <h5>Full Stack Developer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2017</p>
-                                    <h6 class="mb-0"><a rel="link" class="text-dark" href="https://www.ijse.lk/">IJSE - Institute of Java and Software Engineer</a></h6>
+                                    <p class="text-primary mb-1">2020</p>
+                                    <h6 class="mb-0"><a rel="link" class="text-dark"
+                                            href="https://www.example-blog.com/">Blog Platform</a></h6>
+                                    <p>
+                                        Developed a blog platform that allowed users to create, manage, and publish
+                                        articles. The platform featured a **user authentication system**, **commenting
+                                        functionality**, and an **admin dashboard** for managing content and users.
+                                    </p>
+                                    <ul>
+                                        <li><strong>Backend Development:</strong> Built with **Node.js** and
+                                            **Express**, implementing RESTful APIs for user management, article
+                                            creation, and commenting functionality.</li>
+                                        <li><strong>Frontend Design:</strong> The frontend was developed using
+                                            **React.js** and **Tailwind CSS**, ensuring a fast and responsive design.
+                                        </li>
+                                        <li><strong>Database:</strong> Used **MongoDB** for storing user data and
+                                            articles, with an optimized query structure for fast retrieval and
+                                            scalability.</li>
+                                    </ul>
+                                    <p>Technologies Used:</p>
+                                    <ul>
+                                        <li>Backend: **Node.js**, **Express**</li>
+                                        <li>Frontend: **React.js**, **Tailwind CSS**</li>
+                                        <li>Database: **MongoDB**</li>
+                                    </ul>
                                 </div>
+
+                                <!-- Simlea Project -->
                                 <div class="col-sm-6">
-                                    <h5>&nbsp;</h5>
+                                    <h5>Full Stack Developer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1"></p>
-                                    <h6 class="mb-0"></h6>
+                                    <p class="text-primary mb-1">2019</p>
+                                    <h6 class="mb-0"><a rel="link" class="text-dark"
+                                            href="https://www.simlea.com/">Simlea - Dynamic Form Management</a></h6>
+                                    <p>
+                                        Developed a dynamic form management system that integrated with **Salesforce**,
+                                        **HubSpot**, and **SAP C4C** to automate form submissions and data collection.
+                                        The system provided users with a seamless experience to create, submit, and
+                                        track forms in real-time.
+                                    </p>
+                                    <ul>
+                                        <li><strong>Backend Development:</strong> The backend was built with
+                                            **Node.js**, integrating with multiple external APIs and databases to
+                                            streamline form data collection.</li>
+                                        <li><strong>Frontend Development:</strong> Developed a responsive interface
+                                            using **Next.js** and **React**, allowing for dynamic form creation based on
+                                            user input and requirements.</li>
+                                        <li><strong>Database:</strong> Utilized **MySQL** to store form data and ensure
+                                            seamless data flow across systems.</li>
+                                    </ul>
+                                    <p>Technologies Used:</p>
+                                    <ul>
+                                        <li>Backend: **Node.js**, **Express**</li>
+                                        <li>Frontend: **Next.js**, **React.js**</li>
+                                        <li>Database: **MySQL**</li>
+                                        <li>Other Integrations: **Salesforce**, **HubSpot**, **SAP C4C**</li>
+                                    </ul>
                                 </div>
-                                <div class="col-sm-6 ml-1">
-                                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded">
-                                        <div class="bg-icon flex-shrink-0 mb-3">
-                                            <!-- <i class="fa fa-github  fa-x text-dark"></i> -->
-                                            <i class="fab fa-github fa-lg fa-x text-dark" style="font-size: 50px;"></i>
-                                        </div>
-                                        <!-- <div class="ms-sm-4"> -->
-                                            <!-- <a class="mb-3" aref="">Link 1</a> |
-                                            <a class="mb-3" aref="">Link 1</a> -->
-                                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
-                                            <!-- <span>Responsive web application for given design. CMS, SEO</span> -->
-                                        <!-- </div> -->
-                                    </div>
-                                    <a class="mb-3" rel="link" href="https://github.com/sachithBG?tab=repositories">Link 1</a> |
-                                    <a class="mb-3" rel="link" href="https://github.com/BG-Sachith?tab=repositories">Link 2</a>
-                                    <!-- <hr class="text-primary my-2"> -->
-                                    <!-- <p class="text-primary mb-1"></p> -->
-                                    <h6 class="mb-0"></h6>
+
+                                <!-- IJSE - Institute of Java and Software Engineer -->
+                                <div class="col-sm-6">
+                                    <h5>Software Developer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2017</p>
+                                    <h6 class="mb-0"><a rel="link" class="text-dark" href="https://www.ijse.lk/">IJSE -
+                                            Institute of Java and Software Engineer</a></h6>
+                                    <p>
+                                        At **IJSE**, I developed key projects that laid the foundation for my career.
+                                        Projects included a **POS system**, a **student management system**, and a
+                                        **game project**. These experiences provided hands-on knowledge of various
+                                        frameworks and development methodologies.
+                                    </p>
+                                    <ul>
+                                        <li><strong>POS System:</strong> Developed a POS system to help businesses track
+                                            sales and inventory efficiently.</li>
+                                        <li><strong>Student Management System:</strong> Built using **Hibernate**,
+                                            allowing institutions to manage student data and records seamlessly.</li>
+                                        <li><strong>Game Development:</strong> Created a **shooting game** based on
+                                            aircraft battles as part of a course on **Game Development Fundamentals**.
+                                        </li>
+                                    </ul>
+                                    <p>Technologies Used:</p>
+                                    <ul>
+                                        <li>Backend: **Java SE**, **Hibernate**, **JavaFX**</li>
+                                        <li>Frontend: **HTML**, **JavaScript**, **CSS**</li>
+                                        <li>Others: **MySQL**, **Apache**, **PHP**, **Jasper Reports**</li>
+                                    </ul>
                                 </div>
+
                             </div>
                         </div>
                         <div id="tab-2" class="tab-pane fade show p-0">
                             <div class="row gy-5 gx-4">
-                                <div class="">
+                                <!-- Education Section -->
+                                <div class="col-sm-12">
                                     <div class="d-flex justify-content-start">
-                                    <h5>Electrical and Information Engineer</h5> &nbsp; BSc (Hons) <p class="text-primary mb-1  text-justify ">&nbsp; 2016</p>
-                                </div>
+                                        <h5>Electrical and Information Engineering</h5> &nbsp; BSc (Hons)
+                                        <p class="text-primary mb-1 text-justify">&nbsp; 2016</p>
+                                    </div>
                                     <hr class="text-primary my-2">
+                                    <h6 class="mb-0">Faculty of Engineering, University of Ruhuna</h6>
+                                </div>
 
-                                    <h6 class="mb-0">Faculty of Engineering University of Ruhuna</h6>
-                                </div>
-                                <!-- <div class="col-sm-6">
-                                    <h5>IOS Development</h5>
+                                <!-- Certificates Section -->
+                                <div class="col-sm-12">
+                                    <h5>Certificates</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <div class="row g-4">
+                                        <!-- Certificate Item 1 -->
+                                        <div class="col-lg-4 col-md-3 col-sm-4 col-4 portfolio-item">
+                                            <div class="portfolio-img rounded overflow-hidden">
+                                                <img class="img-fluid" src="img/certificate/agile.png"
+                                                    alt="Agile Certification">
+                                                <div class="portfolio-btn">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/agile.png" data-lightbox="portfolio">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/agile.png" target="_blank">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Certificate Item 2 -->
+                                        <div class="col-lg-4 col-md-3 col-sm-4 col-4 portfolio-item">
+                                            <div class="portfolio-img rounded overflow-hidden">
+                                                <img class="img-fluid" src="img/certificate/react.png"
+                                                    alt="React Certification">
+                                                <div class="portfolio-btn">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/react.png" data-lightbox="portfolio">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/react.png" target="_blank">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Certificate Item 3 -->
+                                        <div class="col-lg-4 col-md-3 col-sm-4 col-4 portfolio-item">
+                                            <div class="portfolio-img rounded overflow-hidden">
+                                                <img class="img-fluid" src="img/certificate/micro.png"
+                                                    alt="Microservices Certification">
+                                                <div class="portfolio-btn">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/micro.png" data-lightbox="portfolio">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/micro.png" target="_blank">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Certificate Item 4 -->
+                                        <div class="col-lg-4 col-md-3 col-sm-4 col-4 portfolio-item">
+                                            <div class="portfolio-img rounded overflow-hidden">
+                                                <img class="img-fluid" src="img/certificate/node_mongo.png"
+                                                    alt="Node.js & MongoDB Certification">
+                                                <div class="portfolio-btn">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/node_mongo.png" data-lightbox="portfolio">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/node_mongo.png" target="_blank">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Certificate Item 5 -->
+                                        <div class="col-lg-4 col-md-3 col-sm-4 col-4 portfolio-item">
+                                            <div class="portfolio-img rounded overflow-hidden">
+                                                <img class="img-fluid" src="img/certificate/docker.png"
+                                                    alt="Docker Certification">
+                                                <div class="portfolio-btn">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/docker.png" data-lightbox="portfolio">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/docker.png" target="_blank">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Certificate Item 6 -->
+                                        <div class="col-lg-4 col-md-3 col-sm-4 col-4 portfolio-item">
+                                            <div class="portfolio-img rounded overflow-hidden">
+                                                <img class="img-fluid" src="img/certificate/openshift.png"
+                                                    alt="OpenShift Certification">
+                                                <div class="portfolio-btn">
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/openshift.png" data-lightbox="portfolio">
+                                                        <i class="fa fa-eye"></i>
+                                                    </a>
+                                                    <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                                                        href="img/certificate/openshift.png" target="_blank">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <h5>Web Design</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>Apps Design</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
-                                </div> -->
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Skills and Experience Section -->
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 font-weight-bold">Skills & Experience</h1>
+                    <div class="container-xxl py-6 pb-5" id="skills">
+                        <div class="container">
+                            <div class="row g-5">
+                                <!-- Skills Section -->
+                                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+
+
+                                    <div class="row">
+                                        <!-- Left Column for Skills -->
+                                        <div class="col-md-6">
+                                            <!-- Skill: Spring Boot -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">Spring Boot</h6>
+                                                    <h6 class="font-weight-bold">85%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-warning" role="progressbar"
+                                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Skill: NestJs -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">NestJs</h6>
+                                                    <h6 class="font-weight-bold">80%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-dark" role="progressbar"
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Skill: NodeJs -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">NodeJs</h6>
+                                                    <h6 class="font-weight-bold">85%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-dark" role="progressbar"
+                                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Skill: NextJs -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">NextJs</h6>
+                                                    <h6 class="font-weight-bold">85%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-info" role="progressbar"
+                                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Skill: React -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">React</h6>
+                                                    <h6 class="font-weight-bold">83%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-info" role="progressbar"
+                                                        aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Skill: Angular -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">Angular</h6>
+                                                    <h6 class="font-weight-bold">80%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-info" role="progressbar"
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Right Column for Skills -->
+                                        <div class="col-md-6">
+                                            <!-- Skill: HTML -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">HTML</h6>
+                                                    <h6 class="font-weight-bold">95%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-primary" role="progressbar"
+                                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Skill: JavaScript -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">JavaScript</h6>
+                                                    <h6 class="font-weight-bold">90%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-danger" role="progressbar"
+                                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Skill: CSS -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">CSS</h6>
+                                                    <h6 class="font-weight-bold">85%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-warning" role="progressbar"
+                                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Skill: Java -->
+                                            <div class="skill mb-4">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="font-weight-bold">Java</h6>
+                                                    <h6 class="font-weight-bold">90%</h6>
+                                                </div>
+                                                <div class="progress rounded-pill">
+                                                    <div class="progress-bar bg-danger" role="progressbar"
+                                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- Expertise End -->
 
 
     <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
+    <div class="container-fluid bg-light mb-5 pb-3" id="service">
         <div class="container">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Services</h1>
+                    <h1 class="display-5 mb-0 font-weight-bold">My Services</h1>
                 </div>
-                <div class="col-lg-6 text-lg-end hide">
-                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5 rounded-pill" href="#contact">Hire Me</a>
                 </div>
             </div>
+
             <div class="row g-4">
+                <!-- Full-Stack Development Service -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded-lg shadow-sm h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
+                            <i class="fa fa-crop-alt fa-2x text-primary"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Full-Stack</h4>
-                            <br>
-                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
-                            <span>handle the client side as well as the server side of the web applications. <br> have knowledge of both elements (front-end and back-end)</span>
+                            <h4 class="mb-3 font-weight-bold">Full-Stack Development</h4>
+                            <p>Handle both the client-side and server-side of web applications. Expertise in both
+                                front-end and back-end development.</p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code  fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Back-End Development</h4>
-                            <span>Provide Apis for given design. responsible for maintaining and organizing databases.</span>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code  fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Front-End Development</h4>
-                            <span>Responsive web application for given design. CMS, SEO</span>
-                        </div>
-                    </div>
-                </div> -->
+
+                <!-- Management Service -->
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded-lg shadow-sm h-100 p-4 p-lg-5">
                         <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
+                            <i class="fa fa-code-branch fa-2x text-primary"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Management </h4>
-                            <!-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> -->
-                            <span>GitHub/GitLab as the powerful version control systems. <br> Jira/YouTrack as the management tools. </span>
+                            <h4 class="mb-3 font-weight-bold">Project Management</h4>
+                            <p>Utilize tools like GitHub/GitLab for version control and Jira/YouTrack for efficient
+                                project management.</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Optional: Additional Services (Uncomment if needed) -->
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded-lg shadow-sm h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-code fa-2x text-primary"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3 font-weight-bold">Back-End Development</h4>
+                            <p>Provide APIs, handle databases, and ensure smooth integration between the front-end and
+                                back-end.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Optional: Another Service (Uncomment if needed) -->
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div
+                        class="service-item d-flex flex-column flex-sm-row bg-white rounded-lg shadow-sm h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-laptop-code fa-2x text-primary"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3 font-weight-bold">Front-End Development</h4>
+                            <p>Build responsive and dynamic web applications with a focus on the user experience and
+                                performance.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
     <!-- Service End -->
 
 
@@ -452,174 +842,320 @@
         <div class="container">
             <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Tools</h1>
+                    <h1 class="display-5 mb-0 text-dark">Tools</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
                         <li class="mx-3 active" data-filter="*">All</li>
-                        <li class="mx-3" data-filter=".first">BE</li>
-                        <li class="mx-3" data-filter=".second">FE</li>
+                        <li class="mx-3" data-filter=".first">Back-End</li>
+                        <li class="mx-3" data-filter=".second">Front-End</li>
                         <li class="mx-3" data-filter=".third">Other</li>
                     </ul>
                 </div>
             </div>
+
             <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden ">
-                        <img class="img-fluid" src="img/spring.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/spring.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                <!-- Portfolio Item 1 - Spring -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/spring.png" alt="Spring">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/spring.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/nextjs.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/nextjs.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
+                    <div class="text-center mt-3">
+                        <h6>Spring Boot</h6>
+                        <p class="text-muted">Powerful backend framework for building Java-based applications.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4 portfolio-item third">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/github.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/github.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
+                <!-- Portfolio Item 2 - Next.js -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/nextjs.png" alt="NextJS">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/nextjs.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/nest.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/nest.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
+                    <div class="text-center mt-3">
+                        <h6>Next.js</h6>
+                        <p class="text-muted">A React framework for server-side rendering and static website generation.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/react.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/react.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
+                <!-- Portfolio Item 3 - GitHub -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/github.png" alt="GitHub">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/github.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item third">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/jira.jpeg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/jira.jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
+                    <div class="text-center mt-3">
+                        <h6>GitHub</h6>
+                        <p class="text-muted">Version control system for managing code repositories.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/nodejs.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/nodejs.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
+                <!-- Portfolio Item 4 - NestJS -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/nest.png" alt="NestJS">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/nest.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/angular.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/angular.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
+                    <div class="text-center mt-3">
+                        <h6>NestJS</h6>
+                        <p class="text-muted">A framework for building scalable Node.js applications with TypeScript.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item third">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/slack.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/slack.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
+                <!-- Portfolio Item 5 - React -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/react.png" alt="React">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/react.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/mongodb.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/mongodb.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
+                    <div class="text-center mt-3">
+                        <h6>React</h6>
+                        <p class="text-muted">A JavaScript library for building user interfaces with components.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/bootstrap.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/bootstrap.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
+                <!-- Portfolio Item 6 - Jira -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/jira.jpeg" alt="Jira">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/jira.jpeg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/javascript.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/javascript.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
+                    <div class="text-center mt-3">
+                        <h6>Jira</h6>
+                        <p class="text-muted">Project management and issue tracking software used for agile development.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/mui.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/mui.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
+                <!-- Portfolio Item 7 - NodeJS -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/nodejs.png" alt="Node.js">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/nodejs.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/html5.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/html5.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
+                    <div class="text-center mt-3">
+                        <h6>Node.js</h6>
+                        <p class="text-muted">JavaScript runtime for building server-side applications.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/css3.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/css3.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
+                <!-- Portfolio Item 8 - Angular -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/angular.png" alt="Angular">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/angular.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-4   col-4  portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/mysql.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/mysql.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
-                        </div>
+                    <div class="text-center mt-3">
+                        <h6>Angular</h6>
+                        <p class="text-muted">A platform for building single-page client-side applications using HTML,
+                            CSS, and TypeScript.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-4  col-4  portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/tailwindcss.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/tailwindcss.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+
+                <!-- Portfolio Item 9 - Slack -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/slack.jpg" alt="Slack">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/slack.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
+                    <div class="text-center mt-3">
+                        <h6>Slack</h6>
+                        <p class="text-muted">Communication and collaboration tool for teams, integrating with various
+                            services.</p>
+                    </div>
                 </div>
+
+                <!-- Portfolio Item 10 - MongoDB -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/mongodb.png" alt="MongoDB">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/mongodb.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>MongoDB</h6>
+                        <p class="text-muted">A NoSQL database system designed for scalability and performance.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 11 - Bootstrap -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/bootstrap.png" alt="Bootstrap">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/bootstrap.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>Bootstrap</h6>
+                        <p class="text-muted">A front-end framework for responsive, mobile-first websites.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 12 - JavaScript -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/javascript.png" alt="JavaScript">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/javascript.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>JavaScript</h6>
+                        <p class="text-muted">A programming language used for web development, enabling interactive
+                            websites.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 13 - MUI -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/mui.png" alt="MUI">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/mui.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>Material-UI</h6>
+                        <p class="text-muted">A popular React UI framework implementing Material Design.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 14 - HTML5 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/html5.png" alt="HTML5">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/html5.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>HTML5</h6>
+                        <p class="text-muted">Markup language for structuring and presenting web content.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 15 - CSS3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/css3.png" alt="CSS3">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/css3.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>CSS3</h6>
+                        <p class="text-muted">Style sheet language for describing the look and feel of a document
+                            written in HTML.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 16 - MySQL -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/mysql.png" alt="MySQL">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/mysql.png"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>MySQL</h6>
+                        <p class="text-muted">An open-source relational database management system.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 17 - Tailwind CSS -->
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden position-relative">
+                        <img class="img-fluid" src="img/tailwindcss.jpg" alt="Tailwind CSS">
+                        <div class="portfolio-btn position-absolute top-50 start-50 translate-middle">
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="img/tailwindcss.jpg"
+                                data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light border-2 mx-1" href="#"><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>Tailwind CSS</h6>
+                        <p class="text-muted">A utility-first CSS framework for rapidly building custom designs.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
+
     <!-- Projects End -->
 
 
@@ -693,36 +1229,45 @@
                     <div class="owl-carousel testimonial-carousel">
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-1.jpg" alt="">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                    src="img/testimonial-1.jpg" alt="">
                                 <div class="testimonial-icon">
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam
+                                tempor erat.</p>
                             <hr class="w-25 mx-auto">
                             <h5>Client Name</h5>
                             <span>Profession</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-2.jpg" alt="">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                    src="img/testimonial-2.jpg" alt="">
                                 <div class="testimonial-icon">
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam
+                                tempor erat.</p>
                             <hr class="w-25 mx-auto">
                             <h5>Client Name</h5>
                             <span>Profession</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto" src="img/testimonial-3.jpg" alt="">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                    src="img/testimonial-3.jpg" alt="">
                                 <div class="testimonial-icon">
                                     <i class="fa fa-quote-left text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam
+                                tempor erat.</p>
                             <hr class="w-25 mx-auto">
                             <h5>Client Name</h5>
                             <span>Profession</span>
@@ -747,62 +1292,79 @@
         <div class="container py-5">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Let's Work Together</h1>
+                    <h1 class="display-5 mb-0 text-dark">Let's Work Together</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5 hide" href="">Say Hello</a>
+                    <a class="btn btn-primary py-3 px-5" href="mailto:sachith.info2@gmail.com">Say Hello</a>
                 </div>
             </div>
             <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <!-- <p class="mb-2">My office:</p> -->
-                    <p class="mb-2">From:</p>
-                    <h3 class="fw-bold">Kataragama, Sri Lanka</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+94 716 777 9010</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">sachith.info2@gmail.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2 hide">Follow me:</p>
-                    <div class="d-flex pt-2 hide">
-                        <a class="btn btn-square btn-primary me-2 hide" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2 hide" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2 hide" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary me-2 hide" href=""><i class="fab fa-linkedin-in"></i></a>
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div>
+                        <p class="mb-2 text-muted">From:</p>
+                        <h3 class="fw-bold">Kataragama, Sri Lanka</h3>
+                        <hr class="w-50">
+                        <p class="mb-2 text-muted">Call me:</p>
+                        <h3 class="fw-bold">+94 716 777 9010</h3>
+                        <hr class="w-50">
+                        <p class="mb-2 text-muted">Mail me:</p>
+                        <h3 class="fw-bold">sachith.info2@gmail.com</h3>
+                        <hr class="w-50">
+                        <p class="mb-2 text-muted">Follow me:</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-primary me-2" href="https://twitter.com/sachith"
+                                target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-square btn-outline-primary me-2" href="https://facebook.com/sachith"
+                                target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="btn btn-square btn-outline-primary me-2" href="https://youtube.com/sachith"
+                                target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a class="btn btn-square btn-outline-primary me-2" href="https://linkedin.com/in/sachith"
+                                target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp hide" data-wow-delay="0.5s">
-                    <!-- <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
-                    <form>
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <form id="contact-form">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Your Name" required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Your Email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" name="subject"
+                                        placeholder="Subject" required>
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" id="message" name="message"
+                                        placeholder="Leave a message here" style="height: 100px" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <label class="btn btn-primary py-3 px-5"  id="btnSend">Send Message</label>
+                                <button type="button" class="btn btn-primary py-3 px-5 w-100" id="sendEmailBtn">Send
+                                    Message</button>
                             </div>
                         </div>
                     </form>
@@ -810,41 +1372,44 @@
             </div>
         </div>
     </div>
+
     <!-- Contact End -->
 
 
     <!-- Map Start -->
     <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container-xxl pt-5 px-0">
-            <div class="bg-dark">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13335.931833642097!2d81.3194663971716!3d6.420219511240942!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1693117548858!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                <iframe
+        <div class="bg-dark">
+            <!-- Google Maps Embed -->
+            <iframe
                 src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13335.931833642097!2d81.3194663971716!3d6.420219511240942!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1693117548858!5m2!1sen!2slk"
                 frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
-            </div>
         </div>
     </div>
     <!-- Map End -->
 
 
+
     <!-- Copyright Start -->
     <div class="container-fluid bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Sacthith</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom text-secondary" href="">Sachith</a>
-                        <!-- <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
-                    </div>
+        <div class="container">
+            <div class="row">
+                <!-- Left Section - Copyright Information -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom text-secondary" href="#">Sachith</a>, All Rights Reserved.
+                </div>
+
+                <!-- Right Section - Design Attribution -->
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a class="border-bottom text-secondary" href="#">Sachith</a>
+                    <!-- Optionally, add more information such as "Distributed By" or a credit link if necessary -->
+                    <!-- <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
                 </div>
             </div>
         </div>
     </div>
     <!-- Copyright End -->
+
 
 
     <!-- Back to Top -->

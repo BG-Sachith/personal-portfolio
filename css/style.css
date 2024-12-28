@@ -423,3 +423,98 @@
 .hide {
   display: none;
 }
+
+
+/* Smooth animation for progress bars */
+.skill .progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+/* Hover effect for progress bars */
+.skill:hover .progress-bar {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Rounded corners for progress bars */
+.progress {
+    height: 25px;
+    border-radius: 20px;
+}
+
+.skill .progress-bar {
+    border-radius: 20px;
+}
+
+/* Make skill names and percentages stand out more */
+.skill h6 {
+    font-size: 1.1rem;
+}
+
+.skill .progress-bar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* General styling for the service section */
+#service {
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Service item cards */
+.service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.bg-icon i {
+    color: #007bff;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-primary:focus, .btn-primary:active {
+    box-shadow: none;
+}
+
+/* Text styling */
+h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 991px) {
+    .service-item {
+        flex-direction: column;
+    }
+
+    .service-item .bg-icon {
+        margin-bottom: 1rem;
+    }
+}

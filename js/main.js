@@ -121,6 +121,17 @@
     loop: true,
   });
 
+  document.getElementById('sendEmailBtn').addEventListener('click', function () {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    var mailtoLink = `mailto:sachith.info2@gmail.com?subject=${encodeURIComponent(subject)}&body=From: ${encodeURIComponent(name)} (${encodeURIComponent(email)})%0A%0A${encodeURIComponent(message)}`;
+
+    window.location.href = mailtoLink; // Opens the default email client with pre-filled content
+  });
+
   $('[id*=btnSend]').click(function () {
     // alert('message' + $('#name').val());
     // Email.send({
@@ -133,5 +144,21 @@
     //   Subject: $('#subject').val(),
     //   Body: 'From : ' + $('#email').val() + ' .' + $('#message').val(),
     // }).then((message) => alert(message));
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var typedTextElement = document.querySelector(".typed-text-output");
+    var typedText = document.querySelector(".typed-text").innerText;
+    var i = 0;
+
+    function typeText() {
+      if (i < typedText.length) {
+        typedTextElement.innerHTML += typedText.charAt(i);
+        i++;
+        setTimeout(typeText, 100); // Adjust typing speed here
+      }
+    }
+
+    typeText();
   });
 })(jQuery);
