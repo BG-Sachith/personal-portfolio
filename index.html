@@ -139,30 +139,34 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-light pt-6 mt-6 mt-0" id="home">
+    <div class="hero-section" id="home">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <!-- Left Section: Text and CV Download -->
-                <div class="col-lg-6 pt-6 pb-0 pt-lg-0">
-                    <h3 class="text-success mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Sachith</h1>
+                <div class="col-lg-6 hero-text">
+                    <h3 class="hero-subtitle mb-3">I'm</h3>
+                    <h1 class="hero-title mb-3">Sachith</h1>
                     <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Software Engineer, Web Developer, Full-Stack Developer</div>
-
-                    <div class="d-flex align-items-center pt-4">
-                        <a href="https://sachith-portfolio-data.s3.amazonaws.com/Sachith+CV+Resume.pdf"
-                            class="btn btn-primary py-3 px-4 me-5" target="_blank" download>Download CV</a>
-                        <!-- Uncomment if you want to add a video modal in the future -->
-                        <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                        <span></span>
-                    </button> -->
-                        <!-- <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5> -->
+                    <div class="typed-text d-none">Senior Frontend Developer, Web Developer, Full-Stack Developer</div>
+                    
+                    <div class="hero-actions">
+                        <a href="https://sachith-portfolio-data.s3.amazonaws.com/Sachith+CV+Resume.pdf" 
+                           class="btn hero-btn me-4" target="_blank" download>
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon">→</span>
+                        </a>
+                        <a href="#contact" class="btn hero-btn btn-outline">
+                            <span class="btn-text">Get in Touch</span>
+                            <span class="btn-icon">→</span>
+                        </a>
                     </div>
                 </div>
                 <!-- Right Section: Profile Image -->
-                <div class="col-lg-6">
-                    <img class="img-fluid rounded-circle" src="img/profile.png" alt="Sachith Profile Image">
+                <div class="col-lg-6 hero-image">
+                    <div class="profile-wrapper">
+                        <img class="profile-image" src="img/profile.png" alt="Sachith Profile Image">
+                        <div class="profile-shine"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,7 +205,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center mb-5">
                         <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">3+</h1>
+                            <h1 class="display-1 mb-0">4+</h1>
                             <h5 class="mb-0">Years</h5>
                         </div>
                         <h3 class="lh-base mb-0">of working experience as a web developer</h3>
@@ -396,6 +400,60 @@
                                     </ul>
                                 </div>
 
+                                <!-- Simlea Platform -->
+                                <div class="col-sm-6">
+                                    <h5>Senior Software Engineer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2025-Present</p>
+                                    <h6 class="mb-0"><a class="text-dark" rel="link">Simlea Platform</a></h6>
+                                    <p class="mb-0">
+                                        Led the architecture and development of Simlea Revamp Platform, a complex event and form management system:
+                                        <ul class="mb-0">
+                                            <li>Architected and implemented microservices architecture using Spring Boot 3</li>
+                                            <li>Designed and implemented OAuth2-based authentication system with role-based access control</li>
+                                            <li>Developed scalable Angular 20 frontend with reusable UI components</li>
+                                            <li>Implemented Redis caching strategy for improved system performance</li>
+                                            <li>Led code reviews and established coding standards</li>
+                                            <li>Mentored junior developers and implemented CI/CD pipelines</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <!-- Pragathi Finance Hub -->
+                                <div class="col-sm-6">
+                                    <h5>Technical Lead</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2022-2023</p>
+                                    <h6 class="mb-0"><a class="text-dark" rel="link">Pragathi Finance Hub</a></h6>
+                                    <p class="mb-0">
+                                        Led the technical development of a full-featured microfinance platform:
+                                        <ul class="mb-0">
+                                            <li>Architected NestJS backend with modular microservices</li>
+                                            <li>Implemented scalable Next.js 15 frontend with Tailwind CSS</li>
+                                            <li>Designed and implemented comprehensive role-based access system</li>
+                                            <li>Developed complete loan lifecycle management system</li>
+                                            <li>Optimized database queries and implemented caching strategies</li>
+                                            <li>Led technical documentation and API design</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <!-- Dynamic Form Mapping System -->
+                                <div class="col-sm-6">
+                                    <h5>Senior Full Stack Developer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2021-2022</p>
+                                    <h6 class="mb-0"><a class="text-dark" rel="link">Dynamic Form Mapping System</a></h6>
+                                    <p class="mb-0">
+                                        Led the development of a dynamic form integration platform:
+                                        <ul class="mb-0">
+                                            <li>Architected Next.js frontend with state management</li>
+                                            <li>Implemented RESTful Node.js backend with API design</li>
+                                            <li>Integrated with multiple CRM systems (Salesforce, HubSpot, SAP C4C)</li>
+                                            <li>Developed real-time data synchronization system</li>
+                                            <li>Optimized system performance and implemented caching</li>
+                                            <li>Wrote comprehensive unit and integration tests</li>
+                                        </ul>
+                                    </p>
+                                </div>
                                 <!-- Effective Solutions (Pvt.) Ltd. -->
                                 <div class="col-sm-6">
                                     <h5>Full Stack Developer</h5>
